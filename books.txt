@@ -1,0 +1,113 @@
+Books for web app
+
+เป้าหมายคือ
+production-ready deployment ก่อน แล้วค่อย
+vibe coding จะลดการรื้อโครงสร้างทีหลังเยอะมาก
+
+
+1) Fundamentals of Software Architecture
+   (Mark Richards, Neal Ford)
+   ใช้ปูเรื่อง architectural characteristics,
+   patterns, และการตัดสินใจเชิงสถาปัตย์
+   เหมาะมากก่อนออกแบบโครงเว็บแอปทั้งระบบ
+   :contentReference[oaicite:0]{index=0}
+
+2) Release It! (2nd Edition) - Michael Nygard
+   เล่มนี้ตรงโจทย์ “production-ready” มาก
+   เน้น failure modes, stability patterns,
+   การออกแบบให้ระบบล้มแล้วฟื้นได้
+   และมีบริบท DevOps / cloud-native ด้วย
+   :contentReference[oaicite:1]{index=1}
+
+3) The Twelve-Factor App (อ่านเป็นหลักการ)
+   ไม่ใช่หนังสือหนา แต่สำคัญมากก่อน deploy
+   เช่น config แยกจากโค้ด, dev/prod parity,
+   logs, process model, portability
+   :contentReference[oaicite:2]{index=2}
+
+4) Web Security for Developers
+   (Malcolm McDonald)
+   อ่านง่ายและ practical สำหรับนักพัฒนาเว็บ
+   ครอบคลุม SQL injection, Cross-Site
+   Scripting, Cross-Site Request Forgery,
+   auth/session/encryption ฯลฯ
+   :contentReference[oaicite:3]{index=3}
+
+5) Designing Data-Intensive Applications
+   (Martin Kleppmann)
+   ถ้าเว็บแอปมี database, queue, cache,
+   event, scaling ในอนาคต เล่มนี้ช่วยเรื่อง
+   trade-off ได้มาก (reliability/scalability)
+   ผู้เขียนระบุว่าหนังสือครอบคลุมสถาปัตยกรรม
+   database และ distributed processing
+   :contentReference[oaicite:4]{index=4}
+
+6) Google SRE Book + SRE Workbook
+   ใช้คิดเรื่อง reliability จริงตอน run production
+   มีหัวข้อ SLO, monitoring, alerting,
+   incident response, postmortem, canary
+   และ config best practices
+   (Google เปิดให้อ่านออนไลน์)
+   :contentReference[oaicite:5]{index=5}
+
+7) The DevOps Handbook + Accelerate
+   คู่นี้ช่วยเรื่อง pipeline, team flow,
+   deployment performance, และการวัดผล
+   Accelerate อิงงานวิจัยเชิงสถิติเรื่อง
+   software delivery performance
+   :contentReference[oaicite:6]{index=6}
+
+[เสริมตามสายงาน]  (เลือกเพิ่มตามโจทย์)
+
+A) ถ้าเน้น Python backend architecture
+- Architecture Patterns with Python
+  ช่วยเรื่อง patterns แบบ Pythonic,
+  testability, DDD, event-driven services
+  และลดการผูกกับ framework มากเกินไป
+  :contentReference[oaicite:7]{index=7}
+
+B) ถ้าจะออกแบบระบบให้เปลี่ยนง่ายระยะยาว
+- Building Evolutionary Architectures (2nd ed.)
+  ช่วยเรื่อง evolutionary design และ
+  automated governance / fitness functions
+  :contentReference[oaicite:8]{index=8}
+
+C) ถ้าอยากเข้าใจ “เว็บ” ระดับโปรโตคอล/หลักการ
+- Web Application Architecture:
+  Principles, Protocols and Practices (2nd ed.)
+  เน้น core concepts และหลักการทั่วไป
+  ของ web application development
+  :contentReference[oaicite:9]{index=9}
+
+D) ถ้า API เป็นหัวใจของระบบ
+- Designing Web APIs
+  ช่วย design API ให้ใช้งานง่ายและดูแลต่อได้
+  (authors + scope ตามหน้าหนังสือ)
+  :contentReference[oaicite:10]{index=10}
+
+E) ถ้าพื้นฐาน Linux ยังไม่แน่น (สำคัญมาก)
+- The Linux Command Line
+  เหมาะกับผู้เริ่มใช้ command line และ shell
+  มีเนื้อหาตั้งแต่พื้นฐานถึงขั้นสูงขึ้น
+  :contentReference[oaicite:11]{index=11}
+- How Linux Works (3rd ed.)
+  ช่วยเข้าใจ internals, networking,
+  virtualization, containers
+  ซึ่ง useful มากตอน deploy จริง
+  :contentReference[oaicite:12]{index=12}
+
+[Security baseline ที่ควรอ่านคู่หนังสือ]
+(อัปเดตเร็วกว่าเล่มหนังสือ)
+
+- OWASP Top Ten (ตอนนี้หน้า OWASP ระบุ
+  current released version คือ 2025)
+  ใช้เป็น awareness list ก่อนเริ่มออกแบบ
+  :contentReference[oaicite:13]{index=13}
+- OWASP ASVS ใช้เป็น checklist ข้อกำหนด
+  สำหรับ secure development / verification
+  :contentReference[oaicite:14]{index=14}
+- OWASP WSTG ใช้เป็นแนวทาง test security
+  ของ web apps / web services
+  (หน้าโครงการระบุ v4.2 stable และกำลังพัฒนา
+  v5.0 ใน latest)
+  :contentReference[oaicite:15]{index=15}
